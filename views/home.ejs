@@ -1,0 +1,22 @@
+<%- include('partials/head') %>
+
+<canvas id="bgCanvas">
+
+</canvas>
+<div class="home">
+  <form class="form-signin" action="/home" method="post">
+    <h1 class="display-4 sky"><a href="/">Sky</a></h1>
+    <h1 class="h3 mb-3 font-weight-normal city-input">Enter your city.</h1>
+    <label for="cityInput" class="sr-only">City Name:</label>
+    <input id="cityInput" class="form-control" type="text" name="cityName" placeholder="City Name">  <label for="inputPassword" class="sr-only">Password</label>
+
+    <button class="btn btn-lg btn-light btn-block btnSubmit" type="submit">Submit</button>
+
+  </form>
+</div>
+
+
+
+
+
+<%- include('partials/scripts') %>

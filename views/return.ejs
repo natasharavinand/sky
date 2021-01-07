@@ -1,0 +1,29 @@
+
+<%- include('partials/head') %>
+
+<canvas id="bgCanvas">
+
+</canvas>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <div class="jumbotron">
+        <h1 class="display-4"> <%=city%> </h1>
+        <p class="lead">The temperature in <%=city%> is <%=temp%> degrees Fahreneheit.</p>
+        <p>The weather description is: <%=desc%></p>
+        <form class="" action="/return" method="post">
+          <button type="submit" class="btn btn-light">Check Another City</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <img class="weather-img" src=<%=imgUrl%>>
+    </div>
+  </div>
+</div>
+
+
+
+<%- include('partials/scripts') %>
